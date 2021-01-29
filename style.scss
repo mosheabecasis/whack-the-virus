@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+html, body {
+    height: 100%;
+    background-color:cadetblue;
+}
+body {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    user-select: none;
+    font-family: 'Lobster Two', cursive; 
+    h1{
+        color:darkblue;
+        font-size: 37px;
+    }
+}
+.container {
+	width:600px;
+	height: 600px;
+	background: #cecece;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+    position: relative;
+    
+    #timer {
+	font-size: 37px;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    color:maroon;
+  }
+   .counter {
+    font-size: 37px;
+    width: 150px;
+	height: 50px;
+  }
+  button{
+    border: 0;
+	width: 150px;
+	height: 50px;
+    font-size: 30px;
+    font-family: 'Lobster Two', cursive;
+	background: orange;
+	box-shadow: 0 10px 20px -5px rgba(0,0,0,.55);
+	cursor: pointer;
+	outline: none;
+	
+	&:active {
+		box-shadow: 0 10px 10px -5px rgba(0,0,0,.55) inset;
+	} 
+  }
+}
+.game{
+    position: absolute;
+    top:150px;
+    left: 0;
+    height:450px;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+    #hole1{
+        border:2px solid black;
+        background-color:white;
+        position: relative;
+        #covid1{
+            grid-area: 1 / 1;
+            height:200px;
+            width:100%;
+            visibility: hidden;
+        }
+        
+    }
+    #hole2{
+        border:2px solid black;
+        background-color:white;
+        position: relative;
+        #covid2{
+            grid-area: 1 / 2;
+            height:200px;
+            width:100%;
+            visibility: hidden;
+        }
+    }
+    #hole3{
+        border:2px solid black;
+        background-color:white;
+        position: relative;
+        #covid3{
+            grid-area: 1 / 3;
+            height:200px;
+            width:100%;
+            visibility: hidden;
+        }
+    }
+    #hole4{
+        border:2px solid black;
+        background-color:white;
+        position: relative;
+        #covid4{
+            grid-area: 2 / 1;
+            height:200px;
+            width:100%;
+            visibility: hidden;
+        }
+    }
+    #hole5{
+        border:2px solid black;
+        background-color:white;
+        position: relative;
+        #covid5{
+            grid-area: 2 / 2;
+            height:200px;
+            width:100%;
+            visibility: hidden;
+        }
+    }
+    #hole6{
+        border:2px solid black;
+        background-color:white;
+        position: relative;
+        #covid6{
+            grid-area: 2 / 3;
+            height:200px;
+            width:100%;
+            visibility: hidden;
+        }
+    }
+}

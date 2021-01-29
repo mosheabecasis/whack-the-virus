@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: cadetblue;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: 'Lobster Two', cursive;
+}
+
+body h1 {
+  color: darkblue;
+  font-size: 37px;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  background: #cecece;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.container #timer {
+  font-size: 37px;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  color: maroon;
+}
+
+.container .counter {
+  font-size: 37px;
+  width: 150px;
+  height: 50px;
+}
+
+.container button {
+  border: 0;
+  width: 150px;
+  height: 50px;
+  font-size: 30px;
+  font-family: 'Lobster Two', cursive;
+  background: orange;
+  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.55);
+          box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  outline: none;
+}
+
+.container button:active {
+  -webkit-box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.55) inset;
+          box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.55) inset;
+}
+
+.game {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  height: 450px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.game #hole1 {
+  border: 2px solid black;
+  background-color: white;
+  position: relative;
+}
+
+.game #hole1 #covid1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1 / 1;
+  height: 200px;
+  width: 100%;
+  visibility: hidden;
+}
+
+.game #hole2 {
+  border: 2px solid black;
+  background-color: white;
+  position: relative;
+}
+
+.game #hole2 #covid2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1 / 2;
+  height: 200px;
+  width: 100%;
+  visibility: hidden;
+}
+
+.game #hole3 {
+  border: 2px solid black;
+  background-color: white;
+  position: relative;
+}
+
+.game #hole3 #covid3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: 1 / 3;
+  height: 200px;
+  width: 100%;
+  visibility: hidden;
+}
+
+.game #hole4 {
+  border: 2px solid black;
+  background-color: white;
+  position: relative;
+}
+
+.game #hole4 #covid4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: 2 / 1;
+  height: 200px;
+  width: 100%;
+  visibility: hidden;
+}
+
+.game #hole5 {
+  border: 2px solid black;
+  background-color: white;
+  position: relative;
+}
+
+.game #hole5 #covid5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: 2 / 2;
+  height: 200px;
+  width: 100%;
+  visibility: hidden;
+}
+
+.game #hole6 {
+  border: 2px solid black;
+  background-color: white;
+  position: relative;
+}
+
+.game #hole6 #covid6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: 2 / 3;
+  height: 200px;
+  width: 100%;
+  visibility: hidden;
+}
+/*# sourceMappingURL=style.css.map */
